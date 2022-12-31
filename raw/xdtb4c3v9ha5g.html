@@ -1,0 +1,18 @@
+<html class=" ccxnsrw idc0_345"><head><meta name="color-scheme" content="light dark"><style type="text/css">.fc-ab-root { display: none !important } body > div.fc-ab-root { display: none !important } .fbs-auth__container.fbs-auth__adblock { display: none !important } .overlay-34_Kj { display: none !important } .wrapper-3AzfF { display: none !important } .fEy1Z2XT { display: none !important } .nytc---modal-window---windowContainer.nytc---modal-window---isShown.nytc---shared---blackBG { display: none !important } .tp-modal { display: none !important } .tp-backdrop.tp-active { display: none !important } .c-nudge__container.c-gate__container { display: none !important } .c-nudge__container.c-regGate__container { display: none !important } .css-n7r8pg { display: none !important } .css-1bd8bfl { display: none !important } .overlay__59af11e2 { display: none !important } .tp_modal { display: none !important } .tp-backdrop.tp-active { display: none !important } div[class^='sp_message_container'] { display: none !important } div[class^='sp_veil'] { display: none !important } </style></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;">
+game:GetService("StarterGui"):SetCore("SendNotification",{
+    Title = "DarkkHub - Universal", 
+    Text = "Loading Script", 
+})
+local Player = game.Players.LocalPlayer
+local VirtualPlr = game:GetService("VirtualUser")
+
+game:GetService("Players").LocalPlayer.Idled:connect(function()
+
+VirtualPlr:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+
+wait(1)
+
+VirtualPlr:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+
+end)
+</pre></body></html>
